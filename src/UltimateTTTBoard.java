@@ -1,8 +1,8 @@
 
 public class UltimateTTTBoard{// Aggregation relationship with Board
-    private Board[] ultimateBoard; // stores all the small TTTBs
+    private Board[] ultimateBoard; // stores 9 Standard TTTBorads
 
-    public UltimateTTTBoard() {
+    public UltimateTTTBoard() { // Initializing all the 9 Tic-Tac-Toe Boards
         ultimateBoard = new Board[9];
         for(int i = 0; i < ultimateBoard.length; i++) {
             ultimateBoard[i] = new Board(i);
@@ -15,6 +15,7 @@ public class UltimateTTTBoard{// Aggregation relationship with Board
             System.out.println();
         }
     }
+    //Checks if there is a 3 match wins of Bords, Horizontally, vertically, or Diagonally
     public boolean checkUltimateWinner() { // check if there is a win of 3 small boards
         return (boardRowMatch() || boardColMatch() || boardDiagMatch());
     }

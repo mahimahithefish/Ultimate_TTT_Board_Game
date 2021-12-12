@@ -9,7 +9,6 @@ public abstract class APlayer {// has generalization relationship with ComputerP
     }
 
     public abstract int selectRowValue(); // will be implemented in ComputerPlayer and HumanPlayer
-
     public abstract int selectColValue(); // will be implemented in ComputerPlayer and HumanPlayer
 
 }
