@@ -18,6 +18,7 @@ public class Board {
         return board;
     }
 
+    //Board number is between 0-9 in the big board
     public int getBoardNum() {
         return boardNum;
     }

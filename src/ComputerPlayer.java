@@ -9,11 +9,11 @@ public class ComputerPlayer extends APlayer {// generalization relationship with
     @Override
     public int selectRowValue() { // returns a random value from between 0 - 2
         return random.nextInt(max - min) + min;
-    }
+    } // randomly pick an available row value to make move
 
     @Override
     public int selectColValue() {// returns a random value from between 0 - 2
         return random.nextInt(max - min) + min;
-    }
+    } // randomly pick an available column value to make move
 
 }
